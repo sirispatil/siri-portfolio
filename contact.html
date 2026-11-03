@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resume and bio-data of Siri Patil, Computer Science and Engineering student.">
+  <title>Contact | Siri Patil</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="index.html">Siri<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="resume.html">Resume</a></li><li><a href="biodata.html">Bio-data</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </nav>
+  </header>
+  <main>
+    <section class="page-head" id="top"><div class="container narrow"><p class="eyebrow">LET'S CONNECT</p><h1 class="section-title">Contact <span>Me</span></h1><p class="section-lead">Have an opportunity, project idea, or just want to connect? Reach out.</p></div></section>
+    <section class="sub-section"><div class="container narrow">
+      <div class="contact-card reveal">
+        <a href="mailto:siripatil@gmail.com"><span>Email</span><strong>siripatil@gmail.com</strong></a>
+        <a href="tel:+918793635672"><span>Phone</span><strong>+91 87936 35672</strong></a>
+        <a href="https://www.linkedin.com/in/siri-patil-6254773a2" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>View LinkedIn profile &#8599;</strong></a>
+        <a href="https://github.com/sirispatil" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>View GitHub profile &#8599;</strong></a>
+      </div>
+      <form id="contactForm" class="info-card reveal" style="margin-top:20px" novalidate>
+        <h3>Send a message</h3>
+        <p><input id="cname" type="text" placeholder="Your name" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:8px;font:inherit"></p>
+        <p style="margin-top:10px"><textarea id="cmsg" rows="4" placeholder="Your message" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:8px;font:inherit"></textarea></p>
+        <div class="btn-row"><button class="btn primary" type="submit" style="border:0;cursor:pointer">Send</button><span id="cstatus" style="align-self:center;font-size:.85rem"></span></div>
+      </form>
+    </div></section>
+  </main>
+  <footer class="footer"><div class="container"><p>&copy; <span id="year"></span> Siri Patil. Built with HTML, CSS, JavaScript and jQuery.</p><a href="https://github.com/sirispatil" target="_blank" rel="noopener noreferrer">GitHub &#8599;</a><a href="#top">Back to top &#8593;</a></div></footer>
+</body>
+</html>
