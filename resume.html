@@ -8,6 +8,15 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="script.js" defer></script>
+  <style>
+    .profile-card { display: flex; gap: 26px; align-items: center; background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 26px; margin-top: 28px; box-shadow: 0 14px 40px #30245c0a; }
+    .profile-card img { width: 140px; height: 140px; border-radius: 22px; flex: none; object-fit: cover; object-position: center top; border: 3px solid #e8e2ff; box-shadow: 0 10px 28px #5940bb22; }
+    .p-name { font: 800 2rem/1.15 'Manrope', sans-serif; letter-spacing: -1px; margin: 0 0 4px; }
+    .p-headline { color: var(--accent); font-weight: 700; margin: 0 0 10px; }
+    .p-contact { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 2px 20px; color: var(--muted); font-size: .9rem; }
+    .p-contact a:hover { color: var(--accent); }
+    @media (max-width: 640px) { .profile-card { flex-direction: column; text-align: center; } .p-contact { justify-content: center; } }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -21,6 +30,15 @@
     <section class="page-head" id="top"><div class="container narrow"><p class="eyebrow">RESUME</p><h1 class="section-title">My <span>Resume</span></h1><p class="section-lead">Education, skills, projects and certifications at a glance.</p></div></section>
     <section class="sub-section"><div class="container narrow">
       <div class="btn-row"><button class="btn primary" id="printResume" type="button">Download / Print as PDF</button><a class="btn secondary" href="https://github.com/sirispatil" target="_blank" rel="noopener noreferrer">GitHub</a><a class="btn secondary" href="https://www.linkedin.com/in/siri-patil-6254773a2" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+
+      <div class="profile-card reveal">
+        <img src="photo.jpg" alt="Photo of Siri Patil">
+        <div>
+          <div class="p-name">Siri Patil</div>
+          <p class="p-headline">Computer Science &amp; Engineering Student</p>
+          <ul class="p-contact"><li><a href="mailto:siripatil@gmail.com">siripatil@gmail.com</a></li><li><a href="tel:+918793635672">+91 87936 35672</a></li><li>Hubballi, Karnataka</li></ul>
+        </div>
+      </div>
       <h2 class="sub-title" style="margin-top:35px">Education</h2>
       <div class="timeline">
         <article class="info-card reveal"><span class="date">2024 &ndash; 2028</span><h3>B.E. &ndash; Computer Science and Engineering</h3><p>K.L.E. Institute of Technology, Hubballi (VTU)</p></article>
@@ -39,7 +57,13 @@
         <p>Web-based system that flags potentially fraudulent checkout sessions by combining session data and risk signals using Flask, MySQL and a Random Forest model.</p>
         <div class="project-links"><a class="btn secondary" href="https://github.com/sirispatil/fraud-detection-system" target="_blank" rel="noopener noreferrer">View on GitHub &#8599;</a></div></article>
       <h2 class="sub-title" style="margin-top:40px">Certifications</h2>
-      <div class="cert-list"><article class="cert-item reveal"><span class="cert-mark">01</span><div><h3>Principles of Generative AI</h3><p>Infosys Springboard</p></div></article><article class="cert-item reveal"><span class="cert-mark">02</span><div><h3>Introduction to Artificial Intelligence</h3><p>Infosys Springboard</p></div></article><article class="cert-item reveal"><span class="cert-mark">03</span><div><h3>Introduction to Deep Learning</h3><p>Infosys Springboard</p></div></article><article class="cert-item reveal"><span class="cert-mark">04</span><div><h3>Introduction to Data Structures and Algorithms</h3><p>Infosys Springboard</p></div></article><article class="cert-item reveal"><span class="cert-mark">05</span><div><h3>Microsoft Azure Fundamentals</h3><p>Microsoft</p></div></article></div>
+      <div class="cert-list">
+        <article class="cert-item reveal"><span class="cert-mark">01</span><div><h3>Principles of Generative AI</h3><p>Infosys Springboard</p><p class="cert-date">Issue date: March 2026</p></div></article>
+        <article class="cert-item reveal"><span class="cert-mark">02</span><div><h3>Introduction to Artificial Intelligence</h3><p>Infosys Springboard</p><p class="cert-date">Issue date: May 2026</p></div></article>
+        <article class="cert-item reveal"><span class="cert-mark">03</span><div><h3>Introduction to Deep Learning</h3><p>Infosys Springboard</p><p class="cert-date">Issue date: December 2025</p></div></article>
+        <article class="cert-item reveal"><span class="cert-mark">04</span><div><h3>Introduction to Data Structures and Algorithms</h3><p>Infosys Springboard</p><p class="cert-date">Issue date: April 2025</p></div></article>
+        <article class="cert-item reveal"><span class="cert-mark">05</span><div><h3>Microsoft Azure Fundamentals</h3><p>Microsoft</p><p class="cert-date">Issue date: August 2026</p></div></article>
+      </div>
     </div></section>
   </main>
   <footer class="footer"><div class="container"><p>&copy; <span id="year"></span> Siri Patil. Built with HTML, CSS, JavaScript and jQuery.</p><a href="https://github.com/sirispatil" target="_blank" rel="noopener noreferrer">GitHub &#8599;</a><a href="#top">Back to top &#8593;</a></div></footer>
